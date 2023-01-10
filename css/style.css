@@ -1,5 +1,23 @@
-.formCadastro{
+*{
+    font-family: 'Prompt', sans-serif;
+}
+
+.sectionCadastro{
     height: 100vh;
+}
+
+.divLogo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 50%;
+    max-height: 30vh;
+    margin: 5rem 0;
+}
+
+.formCadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,35 +26,41 @@
 }
 
 .infoCadastro{
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .labelCadastro{
+    font-family: 'Prompt', sans-serif;
     font-size: 1rem;
-    font-weight:500;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0 0.5rem 0 1rem;
 }
 
 .inputCadastro{
     width: 65%;
-    height: 1.25rem;
+    height: 1.5rem;
     border:  0.001rem solid #222;
     border-radius: 5px;
 }
 
+.erros{
+    color:#ff0000;
+    text-align: center;
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 .btnCadastro{
-    background: #02aaf8;
+    background: #b302b3;
     color:#FFF;
     font-size: 1.5rem;
-    margin-bottom: 1em;
-    border: 0.05px solid #02aaf8 ;
+    margin-top: 1em;
+    border: 0.05px solid #b302b3 ;
     border-radius: 5px;
-    font-family: 'Ruda', sans-serif;
     transition: 0.5s;
 }
 
 .btnCadastro:hover{
-    background: #02628f;
+    background: #970197;
     cursor: pointer;
 }
