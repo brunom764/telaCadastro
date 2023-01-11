@@ -80,3 +80,13 @@
     cursor: pointer;
     border-color:#690269 ;
 }
+
+@media screen and (max-width:768px) {
+    .formCadastro{
+        margin: 1rem;
+    }
+    .btnCadastro,.inputCadastro{
+        min-width: 15rem;
+        max-width: 25rem;
+    }
+}
