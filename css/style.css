@@ -56,8 +56,9 @@
 .erros{
     color:#ff0000;
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    max-width: 20rem;
 }
 
 .btnCadastro{

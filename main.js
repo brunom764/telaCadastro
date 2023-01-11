@@ -54,6 +54,7 @@ listaEmail = listaEmail.concat(emailSalvos)
 
 botaoCadastro.addEventListener("click", function(event) {
     event.preventDefault(); 
+    textErro.textContent = ''
     var form = document.querySelector("#formCadastro");
     var usuario = obtemInfo(form);
     const erros = checkErros(form)
