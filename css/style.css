@@ -4,7 +4,7 @@
 
 .sectionCadastro{
     height: 100vh;
-    background-image: url('https://wallpapercave.com/wp/Ys0gRGS.jpg');
+    background-image: url('../assets/wallpaper.jpg');
 }
 
 .divLogo{
@@ -37,7 +37,8 @@
 }
 
 .inputCadastro{
-    width: 100%;
+    min-width: 20rem;
+    max-width: 30rem;
     height: 3rem;
     padding-left: 1rem;
     background-color: rgb(255, 255, 255);
@@ -47,7 +48,6 @@
 
 .erros{
     color:#ff0000;
-    text-align: center;
     display: block;
     font-size: 0.85rem;
     font-weight: 500;
@@ -56,7 +56,8 @@
 .btnCadastro{
     background: #970197;
     color:#FFF;
-    width: 100%;
+    min-width: 20rem;
+    max-width: 30rem;
     padding: 0.5rem;
     font-size: 1.5rem;
     margin-top: 1rem;
