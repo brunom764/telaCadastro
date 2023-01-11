@@ -16,7 +16,7 @@ function checkErros(form){
     if(!regexNum.test(form.senha.value) || !regexLetras.test(form.senha.value)) {
         erros.push("A senha deve conter letras e números")
     }
-    if(!form.email.value.includes('@') || !form.email.value.includes('.com') || form.email.value.length < 6) {
+    if(!form.email.value.includes('@') || form.email.value.length < 3) {
         erros.push('Por favor, insira um email válido');
     }
     return erros
@@ -39,10 +39,15 @@ function salvaEmail(usuario, listaEmail){
         return listaEmail
 }
 
-var botaoCadastro = document.querySelector('#btnCadastro')
-var textErro = document.querySelector('#erros')
-var listaEmail = []
 
+
+// parte principal
+
+const botaoCadastro = document.querySelector('#btnCadastro')
+var textErro = document.querySelector('#erros')
+let listaEmail = []
+var emailSalvos = JSON.parse(localStorage.getItem("emails")) || []
+listaEmail = listaEmail.concat(emailSalvos)
 
 botaoCadastro.addEventListener("click", function(event) {
     event.preventDefault(); 
@@ -56,5 +61,8 @@ botaoCadastro.addEventListener("click", function(event) {
     else{
         listaEmail = salvaEmail(usuario, listaEmail)
         alert('Cadastro finalizado!')
+        localStorage.setItem("emails", JSON.stringify(usuario.email)) // armazenar
     }
+    form.email.value = "" // limpar form
+    form.senha.value = ""
 });
