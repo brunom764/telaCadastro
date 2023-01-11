@@ -86,7 +86,10 @@
         margin: 1rem;
     }
     .btnCadastro,.inputCadastro{
-        min-width: 15rem;
+        min-width: 17.5rem;
         max-width: 25rem;
+    }
+    .erros{
+        max-width: 17.5rem;
     }
 }
