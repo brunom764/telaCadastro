@@ -7,6 +7,7 @@
 .sectionCadastro{
     height: 100vh;
     background-image: url('../assets/wallpaper.jpg');
+    background-size: cover;
 }
 
 .divLogo{
