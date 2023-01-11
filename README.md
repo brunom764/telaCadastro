@@ -1,5 +1,6 @@
 # Tela Cadastro
 Desafio para a vaga de estagio da technoOK
+#### Deploy: https://tela-cadastro-brunom764.vercel.app/
 
 ### 🏁 Features
 - [x] Cadastrar usuario
