@@ -28,7 +28,7 @@ botaoCadastro.addEventListener("click", function(event) {
     else{
         listaEmail = salvaEmail(usuario, listaEmail)
         alert('Cadastro finalizado!')
-        localStorage.setItem("emails", JSON.stringify(usuario.email)) // armazenar
+        localStorage.setItem("emails", JSON.stringify(listaEmail)) // armazenar
     }
     form.email.value = "" // limpar form
     form.senha.value = ""
