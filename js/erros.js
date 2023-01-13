@@ -11,7 +11,7 @@ function checkErros(form){
     else if(!regexNum.test(form.senha.value) || !regexLetras.test(form.senha.value)) {
         erros.push("A senha deve conter letras e números.")
     }
-    else if(!form.email.value.includes('@') || form.email.value.length < 3) {
+    if(!form.email.value.includes('@') || form.email.value.length < 3) {
         erros.push('Por favor, insira um email válido.');
     }
     return erros
