@@ -75,6 +75,9 @@
     border: 0.05px solid #970197;
     border-radius: 5px;
     transition: 0.5s;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .btnCadastro:hover{
