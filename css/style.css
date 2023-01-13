@@ -1,9 +1,3 @@
-*{
-    font-family: 'Prompt', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
 .sectionCadastro{
     height: 100vh;
     background-image: url('../assets/wallpaper.jpg');
@@ -34,7 +28,7 @@
     font-family: 'Prompt', sans-serif;
     text-transform: uppercase;
     letter-spacing: 7.5px;
-    color: rgb(128, 128, 128)
+    color: rgb(122, 122, 122)
 }
 
 .infoCadastro{
